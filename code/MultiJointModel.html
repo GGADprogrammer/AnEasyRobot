@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Multi joint model</title>
+   <!-- <link href="full.css" rel="stylesheet" type="text/css">-->
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix.js"></script>
+     <!-- <script type="text/javascript" src="../Common/webgl-utils.js"></script>
+      <script type="text/javascript" src="../Common/initShaders.js"></script>
+      <script type="text/javascript" src="../Common/MV.js"></script>-->
+    <script src="MultiJointModel.js"></script>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="800" height="500" ><!--width="400" height="400"-->
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>&larr;&rarr;: arm1 rotation,&uarr;&darr;: joint1 rotation, xz: joint2(wrist) rotation, cv: finger rotation</p>
+    <p>W/S控制视点绕X轴旋转，A/D 控制视点绕Z旋转;"J"-放大物体，“L"缩小物体. </p>
+    <p>采用P键进行切换ortho和perspective，默认为 perspective</p>
+    <p>1,2,3,4,5,6控制平移,7,8控制光照颜色,9关闭光照</p>
+    <p>F/G控制雾气浓度</p>
+  </body>
+</html>
